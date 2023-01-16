@@ -147,7 +147,15 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
+    $('#Now').click(function(){
+      // $(this): 指當事者也就是 $('#Now')
+      // $(this).css('background-color', 'pink');
+      // $(this).nextAll().css('background-color', 'pink');
+      // $(this).prevAll().css('background-color', 'pink');
+      // $(this).siblings().css('background-color', 'pink');
+      $(this).siblings().last().css('background-color', 'pink');
 
+    });
   </script>
 </body>
 
