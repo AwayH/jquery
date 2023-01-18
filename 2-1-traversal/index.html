@@ -131,7 +131,7 @@
     </ul>
     <ul>
       <li>li</li>
-      <li>li</li>
+      <li class="item">li</li>
       <li>li</li>
       <li>li</li>
       <li>li</li>
@@ -153,8 +153,16 @@
       // $(this).nextAll().css('background-color', 'pink');
       // $(this).prevAll().css('background-color', 'pink');
       // $(this).siblings().css('background-color', 'pink');
-      $(this).siblings().last().css('background-color', 'pink');
+      // $(this).siblings().first().css('background-color', 'pink');
+      // $(this).siblings().eq(2).css('background-color', 'pink');
+      // $(this).parent().next().css('background-color', 'pink');
+      // $(this).parent().prev().find('li').eq(2).css('background-color', 'pink');
 
+      const $parent = $(this).parent();
+      const $parentSiblings = $parent.siblings();
+
+      // $parentSiblings.eq(2).find('li').filter(':even').css('background-color', 'pink');
+      $parentSiblings.has('li').css('background-color', 'pink');
     });
   </script>
 </body>
