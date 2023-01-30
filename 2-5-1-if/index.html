@@ -16,6 +16,25 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
+		const money = 100;
+
+		// $('#Money').text(money);
+		// $('#Money').html('<img src="https://git-scm.com/images/logo@2x.png">');
+		// $('#Money').html('<h1>' + money + '</h1>');
+
+		$('#Money').html(`<h1>${money}</h1>`);
+
+		if (money > 150) {
+			$('#Todo').text('去吃麥當勞');
+		}else{
+			$('#Todo').text('去吃便當');
+		}
+
+
+
+
+
+
 
 	</script>
 </body>
