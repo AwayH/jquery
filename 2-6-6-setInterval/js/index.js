@@ -37,7 +37,7 @@ $slide.hover(function () {
 
 $paginationItems.click(function(){
   // console.log($(this).index());
-  const index = $(this).index();
+  index = $(this).index();
   $slideImgInner.css('left', `${-index * 100}%`);
   $paginationItems
     .eq(index).addClass('js-pagination-item')
